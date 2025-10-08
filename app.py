@@ -26,6 +26,43 @@ def set_background(image_file):
 set_background("imz.jpg")  # Image file must be in the same folder
 
 
+# Custom CSS Styling
+st.markdown("""
+    <style>
+    /* Make all headings & labels visible */
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: #ffffff !important;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    /* Style for input boxes */
+    .stNumberInput, .stSelectbox {
+        background-color: rgba(255, 255, 255, 0.85) !important;
+        border-radius: 10px !important;
+        padding: 6px !important;
+    }
+
+    /* Style for buttons */
+    div.stButton > button:first-child {
+        background-color: #ff914d !important;
+        color: white !important;
+        border-radius: 10px !important;
+        font-weight: bold !important;
+    }
+
+    /* Red color for the predicted price */
+    .price-text {
+        color: #ff3333 !important;
+        font-size: 26px !important;
+        font-weight: 800 !important;
+        text-align: center !important;
+        text-shadow: 1px 1px 3px black;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
+
 
 # Load the trained model
 with open('house_price_model.pkl', 'rb') as file:
@@ -63,10 +100,9 @@ input_data = pd.DataFrame({
     'furnishingstatus': [furnishingstatus]
 })
 
-# Predict button
 if st.button("Predict Price"):
     try:
         prediction = model.predict(input_data)
-        st.success(f"🏠 Predicted House Price: ₹{int(prediction[0]):,}")
+        st.markdown(f"<p class='price-text'>🏠 Predicted House Price: ₹{int(prediction[0]):,}</p>", unsafe_allow_html=True)
     except Exception as e:
         st.error(f"❌ Error: {str(e)}")
