@@ -1,10 +1,10 @@
-# 🏠 House Price Prediction using Random Forest
+#  House Price Prediction using Random Forest
 
 This project builds a regression model to predict house prices based on various features such as area, bedrooms, bathrooms, and amenities. It includes a simple **Streamlit interface** for user input.
 
 ---
 
-## 📌 Project Summary
+##  Project Summary
 
 - **Purpose**: Real-time house price prediction based on multiple features 
 - **Goal**: Predict house prices using historical housing data  
@@ -14,7 +14,7 @@ This project builds a regression model to predict house prices based on various 
 
 ---
 
-## 📈 Sample Output
+##  Sample Output
 
 > **User Input Example:**  
 > Area: 3000 sq.ft  
@@ -36,7 +36,7 @@ Python, Pandas, NumPy, Scikit-learn, Streamlit, Jupyter Notebook
 
 ---
 
-## 📂 Key Steps
+##  Key Steps
 
 1. Data Cleaning & Preprocessing  
 2. Feature Encoding & Selection  
@@ -44,7 +44,7 @@ Python, Pandas, NumPy, Scikit-learn, Streamlit, Jupyter Notebook
 
 ---
 
-## 🚀 Run the App
+##  Run the App
 
 ```bash
 git clone https://github.com/yourusername/house-price-prediction.git
