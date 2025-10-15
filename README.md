@@ -45,9 +45,6 @@ Python, Pandas, NumPy, Scikit-learn, Streamlit, Jupyter Notebook
  
 
 ##  Run the App
-
-bash
-git clone https://github.com/yourusername/house-price-prediction.git
-cd house-price-prediction
+Deployment - house-prices-predicts.streamlit.app/
 pip install -r requirements.txt
 streamlit run app.py
