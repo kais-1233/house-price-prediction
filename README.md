@@ -2,7 +2,7 @@
 
 This project builds a regression model to predict house prices based on various features such as area, bedrooms, bathrooms, and amenities. It includes a simple **Streamlit interface** for user input.
 
----
+ 
 
 ##  Project Summary
 
@@ -12,7 +12,7 @@ This project builds a regression model to predict house prices based on various 
 - **Interface**: Streamlit app for user input and prediction  
 - **Accuracy**: Achieved 85% accuracy on test data  
 
----
+ 
 
 ##  Sample Output
 
@@ -28,9 +28,9 @@ This project builds a regression model to predict house prices based on various 
 >  
 > **Predicted Price:** ₹45,00,000
 
----
 
-## 🔧 Tech Stack
+
+##  Tech Stack
 
 Python, Pandas, NumPy, Scikit-learn, Streamlit, Jupyter Notebook
 
@@ -42,11 +42,11 @@ Python, Pandas, NumPy, Scikit-learn, Streamlit, Jupyter Notebook
 2. Feature Encoding & Selection  
 3. Model Training, Evaluation, and Streamlit UI for real-time predictions
 
----
+ 
 
 ##  Run the App
 
-```bash
+bash
 git clone https://github.com/yourusername/house-price-prediction.git
 cd house-price-prediction
 pip install -r requirements.txt
